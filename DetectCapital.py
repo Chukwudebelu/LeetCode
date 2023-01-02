@@ -19,5 +19,5 @@ class Solution:
                     return False
                 elif all(lst):
                     return False
-                elif not all(lst):
+                else:
                     return True
