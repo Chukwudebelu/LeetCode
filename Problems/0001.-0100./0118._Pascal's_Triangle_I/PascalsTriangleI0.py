@@ -1,3 +1,4 @@
+#!/bin/python3
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         lst2 = []
