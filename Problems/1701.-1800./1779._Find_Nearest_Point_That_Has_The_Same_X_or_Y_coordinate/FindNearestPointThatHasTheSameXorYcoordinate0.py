@@ -1,3 +1,4 @@
+#!/bin/python3
 class Solution:
     def nearestValidPoint(self, x: int, y: int, points: list[list[int]]) -> int:
         valid_points = [point for point in points if point[0] == x or point[1] == y]
