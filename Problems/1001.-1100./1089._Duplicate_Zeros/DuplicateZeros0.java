@@ -1,7 +1,7 @@
 //!/bin/java
 class Solution {
     public void duplicateZeros(int[] arr) {
-        // Number of lements in arr[]     
+        // Number of elements in arr[]     
         int n = arr.length;
         
         for (int j = 0; j < n-1; j++) {
