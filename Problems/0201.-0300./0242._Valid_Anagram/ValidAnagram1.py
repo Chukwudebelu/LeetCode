@@ -8,4 +8,3 @@ class Solution:
         char_count_t = Counter(t)
 
         return char_count_s == char_count_t
-        
