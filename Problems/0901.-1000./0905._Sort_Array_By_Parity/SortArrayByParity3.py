@@ -11,7 +11,7 @@ class Solution:
             i += 1
         
         j = 0
-        while (j < len(nums)): # Then, inser all ODD #s
+        while (j < len(nums)): # Then, insert all ODD #s
             if (nums[j] % 2):
                 lst += [nums[j]]
             j += 1
