@@ -14,8 +14,7 @@ class Solution {
                 if (l >= 0) {
                     nums[l+k] = nums[l];
                     l--;
-                }
-                else {
+                } else {
                     nums[j] = arr[j];
                     j++;
                 }
