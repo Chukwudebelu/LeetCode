@@ -21,4 +21,4 @@ class Solution:
 
     # Number of security devices
     def countOne(self, bin_string: str) -> int:
-        return bin_string.count("1")
+        return sum([1 for _ in bin_string if _ == "1"])
