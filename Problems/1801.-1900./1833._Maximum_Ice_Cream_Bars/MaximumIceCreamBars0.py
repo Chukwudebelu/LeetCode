@@ -5,7 +5,7 @@ class Solution:
         costs = sorted(costs)
         n, ice_cream = len(costs), 0
 
-        while ice_cream < n and costs[ice_cream] <= coins:
+        while (ice_cream < n and costs[ice_cream] <= coins):
             coins -= costs[ice_cream]
             ice_cream += 1
         return ice_cream
