@@ -1,26 +1,26 @@
 class MyQueue(object):
     def __init__(self):
         """Initialize the queue using a list object"""
-        self.Q = []   
+        self.stack = []   
 
     def push(self, x: int) -> None:
         """Push element x to the back of the queue"""
-        self.Q += [x]
+        self.stack += [x]
 
     def pop(self) -> int:
         """Remove the element from the front of the queue
            and return it"""
-        elementOne = self.Q[0]
-        del self.Q[0]
+        elementOne = self.stack[0]
+        del self.stack[0]
         return elementOne
 
     def peek(self) -> int:
         """Returns the element at the front of the queue"""
-        return self.Q[-len(self.Q)]        
+        return self.stack[-len(self.stack)]        
 
     def empty(self) -> bool:
         """Returns 'true' if the queue is empty, 'false' otherwise"""
-        return True if (len(self.Q) == 0) else False    
+        return True if (len(self.stack) == 0) else False    
 
 
 # Your MyQueue object will be instantiated and called as such:
