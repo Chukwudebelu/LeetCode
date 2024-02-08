@@ -16,5 +16,5 @@ class Solution:
       
         # Empty string for output
         for char, count in item_counts:
-            sorted_string += (char*count)
+            sorted_string += char*count
         return sorted_string
