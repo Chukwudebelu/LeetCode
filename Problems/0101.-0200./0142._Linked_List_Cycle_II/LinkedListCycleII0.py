@@ -1,4 +1,5 @@
 #!/bin/python3
+# 142. Linked List Cycle II
 
 # Definition for singly-linked list.
 class ListNode(object):
@@ -7,8 +8,8 @@ class ListNode(object):
         self.next = None
 
 class Solution:
-    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if (not head): # Empty Linked List has no cycle
+    def detectCycle(self, head: ListNode) -> ListNode:
+        if (not head):    # Empty Linked List has no cycle
             return None
         else:
             linkedListNodes = list()
