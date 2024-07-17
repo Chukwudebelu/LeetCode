@@ -8,7 +8,7 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    def rotateRight(self, head: ListNode, k: int) -> ListNode:
         if (not head):    # empty linked list
             return None
         elif (head and k == 0):    # No rotations!
@@ -23,7 +23,7 @@ class Solution:
                 length += 1
                 curr = curr.next
 
-            k %= length     # get smallest amount of rotations for same results
+            k %= length    # get smallest amount of rotations for same results
 
             new = []
             for i in range(k):
