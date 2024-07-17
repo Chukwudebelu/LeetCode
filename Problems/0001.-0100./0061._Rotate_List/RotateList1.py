@@ -7,7 +7,7 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    def rotateRight(self, head: ListNode, k: int) -> ListNode:
         if (head is None):    # empty linked list
             return head
         elif (head is not None and k == 0):    # No rotations!
